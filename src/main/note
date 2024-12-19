@@ -1,0 +1,31 @@
+1. creer la class JAVA BanqueService qui contient les methodes du webService
+2. creer la class Compte, generer les constructeurs, setters et getters
+3. Ajouter au fichier pom la depandence Jaxws et cherchant jaxws impl maven dependency, ajouter @webservice, @WebMethod et @WebParam
+4. Creer une class serveurJWS pour' lancer le serveur
+5. afficher le wsdl exp: http://localhost:9191/BanqueService?wsdl
+6. uitilier SoapUI pour tester les methodes
+7. creer un nv projet clientWS
+8. pour utiliser le WS eon a besoin de creer un proxy à partir du WSDL (à travert le WSDL en vas creer des class java pour communiquer avec le WS)
+9. dans src, help, action, generate java code from wsdl...
+10. creer une class java client ou en va creer un objet proxy, ce proxy etst le middlewaire q'on va utiliser pour commubiquer avec le serveur
+// utilisation des methodes du ws s'appelle la POO distribuée
+
+
+
+
+
+1. JAX-WS (Java API for XML Web Services)
+JAX-WS est une API Java permettant de créer des services web basés sur le protocole SOAP.
+Elle simplifie la création et la consommation de services web SOAP en Java.
+Le serveur JAX-WS utilise les annotations comme @WebService et @WebMethod pour exposer des méthodes Java en tant que services accessibles à distance.
+Fonctions principales :
+//Publier des services web SOAP.
+Générer automatiquement le WSDL (Web Services Description Language).
+Faciliter la communication entre un client SOAP et un service web.
+2. JAXB (Java Architecture for XML Binding)
+JAXB est une API qui permet de convertir (ou marshaller) des objets Java en XML et vice-versa (unmarshaller).
+Elle joue un rôle clé dans les services SOAP, car les messages SOAP sont au format XML.
+JAXB est souvent utilisé par JAX-WS pour sérialiser/désérialiser les données échangées dans les requêtes et réponses.
+//Fonctions principales :
+Marshaller : Convertir un objet Java en XML.
+Unmarshaller : Convertir un XML en objet Java.
